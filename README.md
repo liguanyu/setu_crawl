@@ -4,3 +4,4 @@
 新建文件webhook.conf并填写webhook api
 推荐用crontab运行
 
+需要本地有一个1080端口的科学工具
