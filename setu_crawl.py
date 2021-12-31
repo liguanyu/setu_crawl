@@ -2,6 +2,7 @@ import base64
 import hashlib
 import io
 import json
+import os
 import sys
 import urllib
 
@@ -9,7 +10,8 @@ import PIL.Image as Image
 
 import yande_setu
 
-WX_WEBHOOK_CONF_PATH = 'webhook.conf'
+BASE_PATH = os.path.dirname(os.path.realpath(__file__))
+WX_WEBHOOK_CONF_PATH = os.path.join(BASE_PATH, 'webhook.conf')
 
 
 def get_wx_webhook():
